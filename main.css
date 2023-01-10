@@ -1,3 +1,20 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.8421962535014006) 0%,
+    rgba(5, 5, 22, 0.8562018557422969) 35%,
+    rgba(0, 11, 13, 1) 100%
+  );
+  /* position: relative; */
+}
 .outter-box {
   width: 60vw;
   height: 70vh;
@@ -6,9 +23,13 @@
   border-top: gray 15px solid;
   border-left: gray 15px solid;
   background-color: rgb(76, 73, 73);
+  margin: 5rem auto;
+  rotate: 15deg;
+  /* z-index: 0; */
+  box-shadow: 150px 300px 200px -40px black;
 }
 .grid-box {
-  width: 95.1%;
+  width: 100%;
   height: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -51,4 +72,76 @@
   border-top: 5px solid yellow;
   background-color: yellow;
   border-left: 5px solid yellow;
+}
+
+.controller {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.power,
+.start {
+  rotate: 30deg;
+  margin-top: -3rem;
+  text-align: center;
+}
+.controller-btn {
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  background-color: red;
+  margin-top: 10px;
+}
+.start {
+  rotate: -30deg;
+}
+.score-light,
+.high-score-light {
+  margin-bottom: 10px;
+  border: 1px solid red;
+  height: 20px;
+  background-color: rgb(103, 21, 21);
+  background-image: url("https://www.transparenttextures.com/patterns/corrugation.png");
+}
+.player-light,
+.cpu-light {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(129, 31, 31);
+  /* margin-top: -2rem; */
+  /* border: 2px solid; */
+}
+.player,
+.cpu {
+  margin-top: -1rem;
+}
+.simon {
+  /* width: 100%; */
+  text-align: center;
+  margin-top: -2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  /* display: block; */
+  position: relative;
+  right: -10px;
+  font-weight: bolder;
+  color: rgb(81, 26, 26);
+}
+.eric {
+  /* text-align: center; */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  /* color: red; */
+  /* z-index: 100; */
+  margin-left: 5rem;
+  letter-spacing: 5px;
+  font-size: xx-large;
+  /* margin-top: 30rem; */
+}
+.eric-text {
+  text-shadow: 1px 1px rgb(255, 0, 13);
 }
